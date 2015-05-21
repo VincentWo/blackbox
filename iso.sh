@@ -6,10 +6,10 @@ mkdir -p isodir
 mkdir -p isodir/boot
 mkdir -p isodir/boot/grub
 
-cp sysroot/boot/myos.kernel isodir/boot/myos.kernel
+cp sysroot/boot/whitebox.kernel isodir/boot/
 cat > isodir/boot/grub/grub.cfg << EOF
-menuentry "myos" {
-	multiboot /boot/myos.kernel
+menuentry "whitebox" {
+	multiboot /boot/whitebox.kernel
 }
 EOF
-grub-mkrescue -o myos.iso isodir
+$HOME/coding/OS-Dev/grub/build/bin/grub-mkrescue -o whitebox.iso isodir

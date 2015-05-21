@@ -7,5 +7,4 @@ KERNEL_ARCH_OBJS:=\
 $(ARCHDIR)/boot.o \
 $(ARCHDIR)/tty.o \
 $(ARCHDIR)/interrupts/PIC/pic_EOI.o \
-$(ARCHDIR)/interrupts/PIC/pic_remap.o \
-$(ARCHDIR)/interrupts/interrupt_init.o \
+$(ARCHDIR)/interrupts/PIC/pic_remap.o

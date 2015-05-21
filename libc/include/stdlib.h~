@@ -1,5 +1,5 @@
-#ifndef __WHITEBOX_WRAPPER_STDLIB_H
-#define __WHITEBOX_WRAPPER_STDLIB_H 1
+#ifndef _STDLIB_H
+#define _STDLIB_H 1
 
 #include <sys/cdefs.h>
 

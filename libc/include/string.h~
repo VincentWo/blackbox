@@ -1,5 +1,5 @@
-#ifndef __WHITEBOX_WRAPPER_STRING_H
-#define __WHITEBOX_WRAPPER_STRING_H 1
+#ifndef _STRING_H
+#define _STRING_H 1
 
 #include <sys/cdefs.h>
 

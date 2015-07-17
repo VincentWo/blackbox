@@ -1,0 +1,20 @@
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <kernel/tty.h>
+void kernel_early(void)
+{
+	terminal_initialize();
+}
+
+void kernel_main(void)
+{
+	printf("Hello, kernel World!\n");
+  printf("%p\n", stdin);
+	printf("%p\n", stdout);
+	printf("%p\n", stderr);
+}
+
+
